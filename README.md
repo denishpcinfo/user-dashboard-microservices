@@ -1,10 +1,10 @@
-🏛️ Sistema de Gestão de Usuários — Arquitetura de Microsserviços
+# 🏛️ Sistema de Gestão de Usuários — Arquitetura de Microsserviços
 
-📚 Descrição do Projeto
+# 📚 Descrição do Projeto
 
 Este projeto implementa uma solução moderna para gestão de informações de usuários utilizando Microsserviços Spring Boot, Angular 17, Oracle Database, Redis Cache e Kubernetes. O sistema permite que atendentes consultem rapidamente dados pessoais, endereços, cartões de crédito e faturas de clientes, com alta performance e escalabilidade
 
-⚙️ Tecnologias Utilizadas
+# ⚙️ Tecnologias Utilizadas
 
 Angular 17 — Front-end SPA
 
@@ -23,7 +23,7 @@ Kubernetes — Orquestração de containers e autoescalabilidade
 Docker — Ambientes de desenvolvimento local
 
 
-🧠 Arquitetura Geral
+# 🧠 Arquitetura Geral
 
 ![arquitetura](https://github.com/user-attachments/assets/b0f00b0c-60e8-49a3-8126-8c3b719a7bce)
 
@@ -33,7 +33,7 @@ Fluxo resumido: Usuário → Angular → BFF (Spring WebFlux) → (Redis Cache �
 
 O Kubernetes é responsável por manter todos os serviços vivos, escaláveis, conectados e balanceados.
 
-📦 Microsserviços
+# 📦 Microsserviços
 
 Microsserviço	Porta	Responsabilidade	Banco de dados
 user-info-service	8081	Nome, CPF, telefone do usuário	Oracle (users)
@@ -42,7 +42,7 @@ credit-card-service	8083	Cartões de crédito do usuário	Oracle (credit_cards)
 invoice-service	8084	Faturas de cartões	Oracle (invoices)
 bff-service	8080	Orquestração e cache	Redis (somente cache)
 
-☸️ Kubernetes
+# ☸️ Kubernetes
 
 Deployments para cada serviço.
 
@@ -54,7 +54,7 @@ Horizontal Pod Autoscaler (HPA) para escalar automaticamente baseando-se em CPU 
 
 ConfigMaps e Secrets para gerenciamento de configurações e credenciais sensíveis.
 
-🚀 Como Executar Localmente
+# 🚀 Como Executar Localmente
 
 Suba os serviços Redis e Oracle XE com Docker Compose:
 
@@ -73,7 +73,7 @@ Acesse a aplicação:
 
 http://localhost:4200
 
-📋 Estrutura de Pastas
+# 📋 Estrutura de Pastas
 
 bff-service/
 
@@ -91,19 +91,19 @@ k8s/                # Manifests Kubernetes
 
 infra/              # Dockerfiles e docker-compose
 
-📢 Diferenciais da Solução
+# 📢 Diferenciais da Solução
 
-🚀 Alta performance: Redis Cache + WebFlux Reativo
+ 🚀 Alta performance: Redis Cache + WebFlux Reativo
 
-☸️ Escalabilidade automática: Kubernetes HPA
+ ☸️ Escalabilidade automática: Kubernetes HPA
 
-🔥 Resiliência: Resilience4j para circuit breakers e retries
+ 🔥 Resiliência: Resilience4j para circuit breakers e retries
 
-🧩 Arquitetura desacoplada: Cada serviço é independente
+ 🧩 Arquitetura desacoplada: Cada serviço é independente
 
-🔒 Banco Oracle isolado por serviço: Mais segurança e separação de domínio
+ 🔒 Banco Oracle isolado por serviço: Mais segurança e separação de domínio
 
-📜 Licença
+ 📜 Licença
 
 Este projeto é privado e foi desenvolvido para estudos e demonstração de uma arquitetura de microsserviços de alta disponibilidade.
 
