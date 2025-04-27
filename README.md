@@ -22,7 +22,10 @@ Kubernetes — Orquestração de containers e autoescalabilidade
 
 Docker — Ambientes de desenvolvimento local
 
+
 🧠 Arquitetura Geral
+
+![arquitetura](https://github.com/user-attachments/assets/b0f00b0c-60e8-49a3-8126-8c3b719a7bce)
 
 O fluxo é o seguinte: o usuário realiza uma consulta via Front-end Angular → O BFF (Backend-for-Frontend) verifica o cache Redis → Se não houver dados no cache, ele faz chamadas paralelas aos microsserviços → Cada microsserviço acessa seu próprio banco Oracle → O BFF responde ao Angular com todos os dados consolidados e também salva no Redis para futuras consultas.
 
