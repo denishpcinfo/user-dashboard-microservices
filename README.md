@@ -76,12 +76,19 @@ http://localhost:4200
 📋 Estrutura de Pastas
 
 bff-service/
+
 user-info-service/
+
 address-service/
+
 credit-card-service/
+
 invoice-service/
+
 frontend-angular/
+
 k8s/                # Manifests Kubernetes
+
 infra/              # Dockerfiles e docker-compose
 
 📢 Diferenciais da Solução
