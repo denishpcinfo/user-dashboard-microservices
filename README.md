@@ -114,4 +114,4 @@ Este projeto é privado e foi desenvolvido para estudos e demonstração de uma 
 
 Desenvolvido por Denis Henrique Pacheco da Costa 🚀
 
-Obs: Estou desenvolvendo o Front!
+Obs: Estou desenvolvendo o Front e o yml do kubernetes!
