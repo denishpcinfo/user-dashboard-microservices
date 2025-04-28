@@ -36,10 +36,15 @@ O Kubernetes é responsável por manter todos os serviços vivos, escaláveis, c
 # 📦 Microsserviços
 
 Microsserviço	Porta	Responsabilidade	Banco de dados
+
 user-info-service	8081	Nome, CPF, telefone do usuário	Oracle (users)
+
 address-service	8082	Endereço do usuário	Oracle (addresses)
+
 credit-card-service	8083	Cartões de crédito do usuário	Oracle (credit_cards)
+
 invoice-service	8084	Faturas de cartões	Oracle (invoices)
+
 bff-service	8080	Orquestração e cache	Redis (somente cache)
 
 # ☸️ Kubernetes
@@ -108,3 +113,5 @@ infra/              # Dockerfiles e docker-compose
 Este projeto é privado e foi desenvolvido para estudos e demonstração de uma arquitetura de microsserviços de alta disponibilidade.
 
 Desenvolvido por Denis Henrique Pacheco da Costa 🚀
+
+Obs: Estou desenvolvendo o Front!
